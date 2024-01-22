@@ -1,18 +1,84 @@
 @use './assets/sass/variables' as *;
 
+
+body{
+    font-family: Montserrat;
+    box-sizing: border-box;
+    margin: 0px;
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 126px 43px 68px 50px;
+    grid-template-areas: 
+    "header header "
+    "title_busca ."
+    "input_busca ."
+    "btn_busca ."
+    "footer footer"
+    ;
+}
+
+
 .header {
     background-color: $roxo-color;
     height: 50px;
+    grid-area: header;
 }
 
 .header img {
-    width: 57px ;
-    height: 37px ;
-    margin-top: 7px ;
+    width: 57px;
+    height: 37px;
+    margin-top: 7px;
     margin-left: 13px;
+    
 }
 
-.footer{
+.title_busca {
+    margin-top: 153px;
+    margin-left: 70px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid red;
+    grid-area: title_busca;
+}
+
+.input_busca {
+    width: 630px;
+    height: 43px;
+    margin-top: 35px;
+    margin-left: 113px;
+    color: black;
+    background-color: #7f7f7f5c;
+    text-align: center;
+    border-radius: 40px;
+    border: 2px solid red;
+    grid-area: input_busca;
+
+}
+
+.btn_busca {
+    background-color: #D8F171;
+    color: black;
+    Width: 156px;
+    Height: 45px;
+    border-radius: 40px;
+    margin-left:  350px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+    border: 2px solid red;
+    
+    grid-area: btn_busca;
+
+}
+
+.footer {
     background-color: $roxo-color;
     height: 50px;
+    grid-area: footer;
+
 }
