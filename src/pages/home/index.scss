@@ -1,0 +1,18 @@
+@use './assets/sass/variables' as *;
+
+.header {
+    background-color: $roxo-color;
+    height: 50px;
+}
+
+.header img {
+    width: 57px ;
+    height: 37px ;
+    margin-top: 7px ;
+    margin-left: 13px;
+}
+
+.footer{
+    background-color: $roxo-color;
+    height: 50px;
+}
