@@ -2,14 +2,22 @@ import './index.scss';
 import book from '../../../assets/Imagens/book.svg';
 import livros from '../../../mock/dataFake';
 import { useRef, useState } from 'react';
-import Modal from "../../components/Modal";
+import Modal from "../../components/Modal1";
+import Modal2 from "../../components/Modal2";
+
 
 const Home = () => {
     const valorRef = useRef();  //*Ref para campo input
     const [livroEscolhido, setLivroEscolhido] = useState([]);
     const [modalAberto, setModalAberto] = useState(false);
+    const [modal2Aberto, setModal2Aberto] = useState(false);
 
-    const ConfirmaLeituraClick = () => {
+
+    const ConfirmarJaLido = () => {
+        setModal2Aberto(true);
+    }
+
+    const ConfirmarQueroLer = () => {
         setModalAberto(true);
     }
 
@@ -60,8 +68,8 @@ const Home = () => {
                         <div key={index} className='livro'>
                             <img src={elemento.imagem} alt="error" />
                             <div className='leitura'>
-                                <button id='ok' >Já Li!</button> <br /> <br />
-                                <button id='not' onClick={() => ConfirmaLeituraClick()}>Quero ler!</button>
+                                <button id='ok' onClick={() => ConfirmarJaLido() }>Já Li!</button> <br /> <br />
+                                <button id='not' onClick={() => ConfirmarQueroLer()}>Quero ler!</button>
                             </div>
                             
                             <h2 className='livro_info'>{elemento.nome}</h2>
@@ -73,7 +81,7 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Renderiza o Modal se modalAberto for true */}
+            <Modal2 mostrar={modal2Aberto} handleClose={() => setModal2Aberto(false)}/>
             <Modal mostrar={modalAberto} handleClose={() => setModalAberto(false)}/>
         </div>
     )

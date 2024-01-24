@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
-import "./Modal.scss";
+import "./Modal2.scss";
 
-function Modal({ mostrar, handleClose }) {
+
+function Modal2({ mostrar, handleClose }) {
 
     const estiloModal = {
         display: mostrar ? 'block' : 'none',
@@ -13,7 +14,8 @@ function Modal({ mostrar, handleClose }) {
         height: '100%',
         overflow: 'auto',
         backgroundColor: 'rgba(0,0,0,0.4)',
-        padding: '50px'
+        padding: '50px',
+        
     };
 
     const estiloConteudo = {
@@ -21,28 +23,31 @@ function Modal({ mostrar, handleClose }) {
         margin: '15% auto',
         padding: '20px',
         border: '1px solid #888',
-        width: '758px',
+        width: '508px',
         height: '436px',
     };
 
-   
+
 
     return (
         <div style={estiloModal}>
             <div style={estiloConteudo}>
-                <h2 id='titulo'>Livro adicionado com sucesso!</h2>
+                <h2 id='titulo'>Livro adicionado a lista JÁ Lido! com sucesso!</h2>
                 <br />
                 <button className='ok' onClick={handleClose}>OK</button>
+                <div>
+
+                </div>
             </div>
         </div>
     );
 }
 
 
-Modal.propTypes = {
+Modal2.propTypes = {
     mostrar: PropTypes.bool.isRequired,
     handleClose: PropTypes.func.isRequired,
     handleConfirmar: PropTypes.func.isRequired,
 };
 
-export default Modal;
+export default Modal2;
