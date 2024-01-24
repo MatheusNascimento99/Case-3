@@ -44,7 +44,6 @@
   font-weight: 700;
   max-width: 100%;
   height: auto;
-  border: 2px solid red;
   grid-area: title_busca_title;
 }
 
@@ -58,7 +57,6 @@
   background-color: #7f7f7f5c;
   text-align: center;
   border-radius: 40px;
-  border: 2px solid red;
   grid-area: input_busca_input;
 }
 
@@ -75,14 +73,28 @@
   text-align: center;
   cursor: pointer;
   margin-top: 20px;
-  border: 2px solid rgb(74, 86, 179);
   grid-area: btn_busca;
   margin-top: 80px;
-
+  margin-bottom: 4.4vw;
 }
 
 .footer {
   background-color: $roxo-color;
   height: 50px;
   grid-area: footer;
+}
+
+.div_livros{
+}
+
+
+
+.livro{
+  border: 2px solid blue;
+
+}
+
+.livro img{
+  width: 281px;
+  height: 385px;
 }
