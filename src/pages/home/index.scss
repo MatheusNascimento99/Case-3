@@ -3,98 +3,150 @@
 @use './assets/sass/variables' as *;
 
 
-*{
-    margin: 0px;
+* {
+  margin: 0px;
+}
+
+.search {
+  width: 100%;
+  border: solid 4px green;
+  width: 740px;
+  text-align: center;
 }
 
 .full {
   font-family: Montserrat;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px, 126px, 43px, 68px, 50px;
-  grid-template-areas: 
-    "header header"
-    "title_busca_title ."
-    "input_busca ."
-    " btn_busca ."
-    "footer footer";
-    text-align: center;
 }
 
-.header {
+
+
+.search_header {
   background-color: $roxo-color;
   height: 50px;
   grid-area: header;
-  
+
 }
 
-.header img {
+.search_header img {
   width: 57px;
   height: 37px;
   margin-top: 7px;
-  margin-left: -1450px;
-  
+  margin-left: 16px;
+
 }
 
-.title_busca_title h1 {
-  margin-top: 200px; 
-  text-align: center;
-  font-size: 50px; 
+.search_title h1 {
+  margin-top: 150px;
+  font-size: 50px;
   font-weight: 700;
   max-width: 100%;
   height: auto;
-  grid-area: title_busca_title;
+  border: 2px red solid;
 }
 
-.input_busca input {
-  width: 80%; 
+.search_input input {
+  width: 80%;
   height: 43px;
-  margin-top: 80px;
-  margin-left: auto; 
-  margin-right: auto; 
+  margin-top: 60px;
+  margin-right: auto;
   color: black;
   background-color: #7f7f7f5c;
   text-align: center;
   border-radius: 40px;
   grid-area: input_busca_input;
+  border: 2px red solid;
+
 }
 
-.btn_busca button {
-  background-color: #D8F171;
+.search_btn button {
+  background-color: $amarelo-color;
   color: black;
   width: 156px;
   height: 45px;
   border-radius: 40px;
-  margin-left: auto; 
-  margin-right: auto; 
+  margin-right: auto;
   font-size: 22px;
   font-weight: 700;
   text-align: center;
   cursor: pointer;
-  margin-top: 20px;
-  grid-area: btn_busca;
-  margin-top: 80px;
-  margin-bottom: 4.4vw;
+  margin-top: 2.8vw;
+  margin-bottom: 8.2vw;
+  border: 2px red solid;
+
 }
 
-.footer {
+.search_footer {
   background-color: $roxo-color;
   height: 50px;
-  grid-area: footer;
 }
 
-.div_livros{
+.div_livros {
+  width: 100%;
 }
 
 
 
-.livro{
+.livro {
+  width: 100%;
+}
+
+.livro img {
+  margin-top: 2vw;
+  margin-left: 7.5vw;
+  width: 221px;
+  height: 325px;
+}
+
+
+.livro_info {
+  font-size: 24px;
+  font-weight: 400;
   border: 2px solid blue;
+  text-align: center;
+}
+
+.descricao {
+  width: 580px;
+  border: 2px solid blue;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 6vw;
+
 
 }
 
-.livro img{
-  width: 281px;
-  height: 385px;
+.change {
+  border: 2px solid rgb(0, 247, 255);
+  width: 768px;
+  margin-left: 748px;
+  margin-top: -686px;
+  background-color: #FFFFFF;
+}
+
+
+.leitura {
+  margin-left: 25vw;
+  margin-top: -14vw;
+  margin-bottom: 12vw;
+  
+}
+
+#ok {
+  background-color: $turquesa-color;
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 40px;
+  cursor: pointer;
+
+}
+
+#not {
+  background-color: $amarelo-color;
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 40px;
+  cursor: pointer;
 }
