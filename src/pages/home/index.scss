@@ -9,12 +9,14 @@
 
 .search {
   width: 100%;
-  border: solid 4px green;
   width: 740px;
   text-align: center;
+  max-width: 100%;
+
 }
 
 .full {
+  
   font-family: Montserrat;
   box-sizing: border-box;
 }
@@ -25,7 +27,7 @@
   background-color: $roxo-color;
   height: 50px;
   grid-area: header;
-
+  max-width: 100%;
 }
 
 .search_header img {
@@ -42,7 +44,7 @@
   font-weight: 700;
   max-width: 100%;
   height: auto;
-  border: 2px red solid;
+  width: auto;
 }
 
 .search_input input {
@@ -55,7 +57,6 @@
   text-align: center;
   border-radius: 40px;
   grid-area: input_busca_input;
-  border: 2px red solid;
 
 }
 
@@ -71,8 +72,7 @@
   text-align: center;
   cursor: pointer;
   margin-top: 2.8vw;
-  margin-bottom: 8.2vw;
-  border: 2px red solid;
+  margin-bottom: 8.9vw;
 
 }
 
@@ -81,14 +81,21 @@
   height: 50px;
 }
 
+//*DIV ESQUERDA LIVROS
+
+
+
 .div_livros {
   width: 100%;
+  max-width: 100%;
 }
 
 
 
 .livro {
   width: 100%;
+  max-width: 100%;
+
 }
 
 .livro img {
@@ -96,32 +103,34 @@
   margin-left: 7.5vw;
   width: 221px;
   height: 325px;
+  max-width: 100%;
+
 }
 
 
 .livro_info {
   font-size: 24px;
   font-weight: 400;
-  border: 2px solid blue;
   text-align: center;
+  max-width: 100%;
+  
 }
 
 .descricao {
   width: 580px;
-  border: 2px solid blue;
   font-size: 20px;
   font-weight: 500;
   margin-left: 6vw;
-
+  max-width: 100%;
 
 }
 
 .change {
-  border: 2px solid rgb(0, 247, 255);
   width: 768px;
   margin-left: 748px;
   margin-top: -686px;
   background-color: #FFFFFF;
+  max-width: 100%;
 }
 
 
@@ -129,7 +138,8 @@
   margin-left: 25vw;
   margin-top: -14vw;
   margin-bottom: 12vw;
-  
+  max-width: 100%;
+  width: 9vw;
 }
 
 #ok {
@@ -139,7 +149,7 @@
   text-align: center;
   border-radius: 40px;
   cursor: pointer;
-
+  
 }
 
 #not {
@@ -149,4 +159,6 @@
   text-align: center;
   border-radius: 40px;
   cursor: pointer;
+  
+
 }
